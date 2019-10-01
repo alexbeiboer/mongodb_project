@@ -28,7 +28,7 @@ mongo = PyMongo(app)
 
 
 @app.route('/index')
-
+@app.route('/')
 def index():
     #connect to database
     collection = mongo.db.events
